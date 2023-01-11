@@ -1,0 +1,4 @@
+   0 vi /tmp/file.txt
+   1 sed -n '2p' /etc/group >> /tmp/file.txt
+   2 chmod g+w,u-r,o+x /tmp/file.txt
+   3 history > /tmp/history.txt

@@ -1,0 +1,12 @@
+   0 echo "#!/bin/bash"
+   1 mkdir /tmp/yevheniia
+   2 touch /tmp/yevheniia/artist.txt
+   3 date >> /tmp/yevheniia/artist.txt
+   4 echo "it works!" >> /tmp/yevheniia/artist.txt
+   5 cp /tmp/yevheniia/artist.txt /opt > script.sh
+   6 chmod u+x script.sh
+   7 ./script.sh
+   8 mv script.sh /bin/script
+   9 cat /tmp/yevheniia/artist.txt
+  10 ls /opt/
+  11 history > /tmp/history.txt
