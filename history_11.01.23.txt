@@ -1,0 +1,23 @@
+   0 #!/bin/bash
+   1 echo "Hello Student!"
+   2 read -p "Enter your name: " name
+   3 mkdir /tmp/test
+   4 touch /tmp/mydate.txt
+   5 date +"%T" >> /tmp/mydate.txt
+   6 echo "Saving data..."
+   7 for i in {10..1}; do
+   8 echo $i
+   9 sleep 0.5
+  10 done
+  11 echo "Data saved. Continuing work..."
+  12 df -h >> /tmp/mydate.txt
+  13 mkdir /opt/mydate
+  14 cp /tmp/mydate.txt /opt/mydate/newmydate.txt
+  15 echo "Copying data..."
+  16 for i in {5..1}; do
+  17 echo $i
+  18 sleep 1
+  19 done
+  20 echo "Well done Boss"
+  21 chmod +x fullscript.sh
+  22 history > /tmp/history.txt
